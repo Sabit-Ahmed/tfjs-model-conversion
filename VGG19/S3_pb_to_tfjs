@@ -1,0 +1,10 @@
+!tensorflowjs_converter \
+    --input_format=tf_saved_model \
+    --output_node_names='scores' \
+    --saved_model_tags=serve \
+    output/vgg19.pb \
+    output/web_model_vgg19
+
+
+### Paste this in cmd ###
+tensorflowjs_converter --input_format=tf_saved_model --output_node_names='scores'--saved_model_tags=serve output/vgg19.pb output/web_model_vgg19
